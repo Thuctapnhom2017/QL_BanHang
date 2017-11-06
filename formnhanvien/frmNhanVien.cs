@@ -91,14 +91,8 @@ namespace QL_BanHang.View
             cmbGioiTinh.Enabled = e;
             dpNamSinh.Enabled = e;
         }
-
-        private void btnThem_Click(object sender, EventArgs e)
-        {
-            flagLuu = 0;
-            clearData();
-            DisEnl(true);
-        }
-
+       
+        //Xóa nhân viên
         private void btnXoa_Click(object sender, EventArgs e)
         {
             DialogResult dr = MessageBox.Show("Bạn chắc chắn muốn xóa nhân viên này?","Xác nhận xóa",MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -112,13 +106,22 @@ namespace QL_BanHang.View
             frmNhanVien_Load(sender, e);
         }
 
+        //btn thêm
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            flagLuu = 0;
+            clearData();
+            DisEnl(true);
+        }
+
+        //btn sửa
         private void btnSua_Click(object sender, EventArgs e)
         {
             flagLuu = 1;
             DisEnl(true);
             loadCMB();
         }
-
+        //btn lưu nhân viên
         private void btnLuu_Click(object sender, EventArgs e)
         {
             NhanVienObj nvObj = new NhanVienObj();
@@ -142,11 +145,16 @@ namespace QL_BanHang.View
 
         private void btnHuy_Click(object sender, EventArgs e)
         {
-            DialogResult dr = MessageBox.Show("Bạn chắc chắn muốn hủy thao tác đang làm?", "Xác nhận hủy", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult dr = MessageBox.Show("Bạn có chắc chắn muốn hủy thao tác đang làm?", "Xác nhận hủy", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dr == DialogResult.Yes)
                 frmNhanVien_Load(sender, e);
             else
                 return;
+        }
+
+        private void txtSDT_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void txtSDT_KeyPress(object sender, KeyPressEventArgs e)
@@ -155,11 +163,6 @@ namespace QL_BanHang.View
             {
                 e.Handled = true;
             }
-        }
-
-        private void txtSDT_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
