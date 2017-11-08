@@ -20,5 +20,3 @@ E:\Hoang\Project\QL_BanHang\QL_BanHang\obj\x86\Debug\QL_BanHang.View.frmHoaDon.r
 E:\Hoang\Project\QL_BanHang\QL_BanHang\obj\x86\Debug\QL_BanHang.View.frmKhachHang.resources
 E:\Hoang\Project\QL_BanHang\QL_BanHang\obj\x86\Debug\QL_BanHang.View.frmNhanVien.resources
 E:\Hoang\Project\QL_BanHang\QL_BanHang\obj\x86\Debug\QL_BanHang.csproj.GenerateResource.Cache
-C:\Users\Le Minh Hieu\Downloads\QL_BanHang\QL_BanHang\obj\x86\Debug\QL_BanHang.exe
-C:\Users\Le Minh Hieu\Downloads\QL_BanHang\QL_BanHang\obj\x86\Debug\QL_BanHang.pdb
